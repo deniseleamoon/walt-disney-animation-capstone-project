@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+} 
+
+.film-posters-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  overflow: hidden;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: baseline;
+  object-fit: cover;
+
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+p{
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  height: 90px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.storytelling {
+  position: absolute;
+  left: 150px;
+  top: 800px;
+  margin-bottom: 2px;
+  z-index: 1;
+}
+
+.pinocchio-sketch {
+  display: inline-block;
+  position: relative;
+  height: 550px;
+  z-index: -10;
+  opacity: 50%;
+  overflow-x: hidden;
+}
+
+ .enlarge-element {
+  transition: transform 0.3s ease-in-out;
+}
+/*
+.pincchio-section-container {
+  display: flex;
+  flex-direction: row;
+}
+*/
+.main-feature-video {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.title-films {
+  position: absolute;
+  font-size: 40px;
+  left: 50px;
+  top: 80px;
+  z-index: 2;
+}
+
+.feature-films {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  filter: drop-shadow(2px 2px 10px black);
+}
+
+footer {
+  height: 150px;
+  background-color: antiquewhite;
+  border-bottom: 10px solid #f3783b;
+  z-index: 2;
+}

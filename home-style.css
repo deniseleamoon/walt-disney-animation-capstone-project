@@ -1,0 +1,154 @@
+
+body {
+  background-color: rgb(1, 1, 14);
+  margin: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+} 
+
+.steamboat-sketch-intro {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.intro-flex-conatainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.walt-disney-intro {
+  color: white;
+}
+.since {
+  color: white;
+  font-size: 115px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+.date-1923 {
+  font-size: 450px;
+  color: transparent;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-color: #f3783b;
+  overflow-x: hidden; 
+  
+}
+
+.films {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  overflow: hidden;
+}
+
+div > video {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.enter-button {
+  display: block;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 10px 12px 10px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.enter-button:hover {
+  background: #ddd;
+  color: black;
+}
+
+.steamboat-background {
+  z-index: -1;
+  opacity: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto; 
+  width: 100%;
+  height: 50%; 
+}
+/*
+#steamboat-bottom {
+position: relative;
+margin: 0 auto;
+}
+*/
+
+#disney-logo-enter {
+position: absolute;
+z-index: 1;
+left: 30%; 
+bottom: -890%;
+}
+
+footer {
+  height: 150px;
+  background-color: antiquewhite;
+  border-bottom: 10px solid #f3783b;
+  z-index: 2;
+}
+
+.footer-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #081716;
+  line-height: 1.5;
+}
+.social-media-links {
+  margin-top: 4px;
+  margin-left: 6px;
+  line-height: 1.5;
+}
+
+.social-media-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+}
+
+/*
+#snow-white-animation {
+  position: relative;
+  animation: mymove 5s infinite;
+}
+#snow-white-animation {animation-timing-function: ease-out;}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 300px;}
+}
+
+#WinnieThePooh-animation {
+  z-index: -1;
+  position: relative;
+  animation: mymove1 5s infinite;
+
+}
+@keyframes mymove1 {
+  from {top: 0px;}
+  to {top: 300px;}
+}
+*/

@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(1, 1, 14);
+  font-family: 'Roboto', sans-serif;
+}
+
+.steamboat-main {
+  display: block;
+  margin: 0 auto;
+}
+
+.intro-flex-conatainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.films-collection {
+  margin: 0 auto;
+}
+
+.films {
+  display: grid;
+  grid-template-columns: 400px 500px 1fr;
+  gap: 0px 0px;
+  overflow: hidden;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section {
+  background-color: lightblue;
+  width: 60px;
+  
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  /*background-color: lightpink;*/
+  height: 50px;
+  margin-left: 45px;
+  z-index: 3;
+}
+
+
+
+.nav-button {
+  background-color: #f3783b;
+  height: 30px;
+  width: 30px;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  align-items: center;
+  font-family: 'Roboto' arial;
+  z-index: 2;
+}
+
+.walt-disney-intro {
+  color: white;
+}
+.since {
+  color: white;
+  font-size: 115px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+.date-1923 {
+  font-size: 450px;
+  color: transparent;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-color: #f3783b;
+  overflow-x: hidden;  
+}
+.wish-image {
+  height: 450px;
+  margin: 0 auto;
+}
+
+#disney-logo-enter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+ 
+}
+.disney-logo {
+  display: inline-block;
+
+  
+}
+/*Buttons*/
+.enter-button {
+  display: inline-block;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 10px 12px 10px 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.enter-button:hover {
+  background: #ddd;
+  color: black;
+}
+
+.steamboat-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+#steamboat-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  opacity: 15%;
+
+}
+/*
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+h1, h2 {
+  color: white;
+}
+
+li a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+ div .social-media-title {
+  color: #faf9f5;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+*/
+footer {
+  height: 150px;
+  background-color: antiquewhite;
+  border-bottom: 10px solid #f3783b;
+  z-index: 2;
+}
+
+
+.footer-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #081716;
+  line-height: 1.5;
+}
+
+.logo-footer {
+  height: 50px;
+  margin-left: 1rem;
+}
+.logo-footer:first-child {
+  margin-right: auto;
+}
+
+
+
+/* Social Media Links */
+.social-links {
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 40rem;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: inherit;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.social-links a:hover {
+  color: #f3783b;
+}
+
+
+
