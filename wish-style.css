@@ -121,12 +121,26 @@ li span {
   font-size: 4.5rem;
 }
 
+.form-container {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.stay-in-touch {
+  font-weight: bold;
+  color: #f3783b;
+  margin-bottom: 10px;
+}
+
 input {
   width: 20%;
-  background-color: rgb(255, 229, 206);
+  background-color: rgb(255, 241, 228);
   color: black;
   border: none;
-  text-transform: uppercase;
+  border-bottom: 2px solid rgb(239, 238, 238);
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .submit-button {
@@ -136,6 +150,7 @@ input {
   color: white;
   border: none;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .submit-button:hover {
@@ -208,6 +223,11 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
+}
+
+#openModal:hover {
+  background-color: #f3783b;
+  color: black;
 }
 
 

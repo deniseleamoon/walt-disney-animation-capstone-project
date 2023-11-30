@@ -40,13 +40,13 @@
     <div id="player"></div>
     </div>
   -->
-  <section>
+  <section class="form-container">
     <div>
-    <h1>stay in touch</h1>
-    <p>
-      Register today for the Disney Animation newsletter to receive all the latest information about our upcoming films and projects.
-    </p>
-  </div>
+      <h1 class="stay-in-touch">stay in touch</h1>
+      <p>
+        Register today for the Disney Animation newsletter to receive all the latest information about our upcoming films and projects.
+      </p>
+    </div>
     <div id="error"></div>
     <form id="form" action="/" method="GET">
       <div>
@@ -59,7 +59,7 @@
       </div>
       <button class="submit-button" type="submit">Submit</button>
     </form>
-
+</section>
 <footer>
   <div class="social-links">
     <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -75,7 +75,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '360',
     width: '640',
-    videoId: 'oyRxxpD3yNw', // Replace 'YOUR_VIDEO_ID' with your YouTube video ID
+    videoId: 'oyRxxpD3yNw', 
     playerVars: {
       'autoplay': 0,
       'controls': 1

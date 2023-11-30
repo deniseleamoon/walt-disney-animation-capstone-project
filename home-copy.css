@@ -6,6 +6,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/*
+.nav-button {
+  background-color: #f3783b;
+  height: 30px;
+  width: 30px;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  align-items: center;
+  font-family: 'Roboto' arial;
+  z-index: 2; 
+}
+*/
 .header {
   height: 50px;
   display: flex;
@@ -13,32 +25,12 @@ body {
   justify-content: space-between;
 }
 
-.left-section {
-  background-color: lightblue;
-  width: 55px;
-  
-}
-
-.right-section {
-  background-color: lightpink;
-  flex: 1;
-  margin-left: 15px;
-}
-
-.nav-button {
-  width: 50px;
-  height: 50px;
-  background-color: #f3783b;
-  border: none;
-  align-items: center;
-  font-family: 'Roboto' arial;
-  font-size:larger;
-}
 
 
 .steamboat-main {
   display: block;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .intro-flex-conatainer {
@@ -58,42 +50,6 @@ body {
   grid-template-columns: 400px 500px 1fr;
   gap: 0px 0px;
   overflow: hidden;
-}
-
-.header {
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.left-section {
-  background-color: lightblue;
-  width: 60px;
-  
-}
-
-.right-section {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  /*background-color: lightpink;*/
-  height: 50px;
-  margin-left: 45px;
-  z-index: 3;
-}
-
-
-
-.nav-button {
-  background-color: #f3783b;
-  height: 30px;
-  width: 30px;
-  padding: 5px 5px 5px 5px;
-  border: none;
-  align-items: center;
-  font-family: 'Roboto' arial;
-  z-index: 2;
 }
 
 .walt-disney-intro {
@@ -197,6 +153,7 @@ a {
   text-decoration: none;
 }
 */
+/*footer*/
 footer {
   height: 150px;
   background-color: antiquewhite;
