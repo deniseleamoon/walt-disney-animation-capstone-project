@@ -19,7 +19,7 @@ body {
   top: 190px;
   filter: drop-shadow(2px 2px 5px black);
 }
-
+  
 .playing-theaters {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
@@ -39,7 +39,6 @@ body {
   z-index: -1;
 }
 
-
 .container {
   position: absolute;
   z-index: 3;
@@ -47,6 +46,23 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*
+@media(max-width: 1312px){
+  #headline { 
+   font-size: 30px;
+  }   
+}
+*/
+@media screen and (min-width: 600px) and (max-width: 1390px) {
+  /* Your CSS styles for this screen width range */
+  .container {
+    top: 50%;
+    left: 40%;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
 #headline, #countdown {
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -58,28 +74,7 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-/*
-.enter-button-trailer, .enter-button-tickets {
-  display: inline-block;
-  height: 30px;
-  width: 200px;
-  border: 1px solid white;
-  color: white;
-  background-color: black;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding: 30px 15px 30px 15px;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: absolute;
-  z-index: 3;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
+
 .enter-button-trailer:hover {
   background: #f3783b;
   color: black;
@@ -109,7 +104,7 @@ h1 {
 
 li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 18px;
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
@@ -117,7 +112,7 @@ li {
 
 li span {
   display: block;
-  font-size: 4.5rem;
+  font-size: 45px;
 }
 
 .form-container {
