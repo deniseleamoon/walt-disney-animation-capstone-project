@@ -66,36 +66,37 @@
   })
   
 
-//Modal Window and API Video
+  // Get the modal element
+  var modal = document.getElementById('videoModal');
 
-let player;
-
-// Function to open the modal and load the video
-function openModal() {
-  document.getElementById('myModal').style.display = 'block';
-
-  const videoId = 'oyRxxpD3yNw';
-
-  // Create a new YouTube player
-  player = new YT.Player('player', {
-    height: '360',
-    width: '640',
-    showinfo: '0',
-    rel: '0',
-    fs: '1',
-    videoId: videoId
-    
-  });
-}
-
-// Function to close the modal and stop the video
-function closeModal() {
-  document.getElementById('myModal').style.display = 'none';
-
-  // Pause the video when the modal is closed
-  if (player && player.pauseVideo) {
-    player.pauseVideo();
+  // Get the button that opens the modal
+  var btn = document.getElementById("openModal");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+    var video = document.getElementById("youtubeVideo");
+    video.src = video.src + "&autoplay=1";
   }
-}
-
+  
+  // When the user clicks on <span> (x), close the modal and stop the video
+  span.onclick = function() {
+    modal.style.display = "none";
+    var video = document.getElementById("youtubeVideo");
+    video.src = video.src.replace("&autoplay=1", "");
+    video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it and stop the video
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      var video = document.getElementById("youtubeVideo");
+      video.src = video.src.replace("&autoplay=1", "");
+      video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    }
+  }
   

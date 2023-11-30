@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="wish-style-mobile.css">
+
+</head>
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="home-copy.html">Home</a>
+      <a href="wish.html">Events</a>
+      <a href="films.html">Feature Films</a>
+    </div>
+  </div>
+  <span class="btn-open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div class="header">
+      <div class="left-section">
+ <div class="media-q-container"> 
+ <div class="postion-section">
+    <div>
+      <img class="main-poster" src="imgs/2209-wish.jpg" alt="">
+    </div>
+</div>
+  <div class="container">
+    <div>
+    <h1 id="headline">only in theaters december 22, 2023</h1>
+  </div>
+    <div id="countdown">
+      <ul>
+        <li><span id="days"></span>days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
+  </div>
+  <div class="btn-modal">
+    <button id="openModal">Watch Trailer</button>
+  
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">X</span>
+      <div id="player"></div>
+    </div>
+  </div>
+  </div>
+</div>
+  <!--
+    <div class="buttons-container">
+    <div>
+        <a class="enter-button-trailer" href="">watch trailer</a>
+    </div>
+    <div id="player"></div>
+    </div>
+  -->
+  <section class="form-container">
+    <div>
+      <h1 class="stay-in-touch">stay in touch</h1>
+      <p>
+        Register today for the Disney Animation newsletter to receive all the latest information about our upcoming films and projects.
+      </p>
+    </div>
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+      </div>
+      <button class="submit-button" type="submit">Submit</button>
+    </form>
+</section>
+<footer>
+  <div class="social-links">
+  <img class="logo-footer" src="logo/walt-disney-logo-pictures-4466.png" alt="logo">
+  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+</div>
+  </div>
+</footer> 
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  let player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    videoId: 'oyRxxpD3yNw', 
+    playerVars: {
+      'autoplay': 0,
+      'controls': 1
+    }
+  });
+}
+
+document.getElementById('openModal').addEventListener('click', function() {
+  document.getElementById('videoModal').style.display = 'block';
+});
+
+function closeModal() {
+  document.getElementById('videoModal').style.display = 'none';
+  player.stopVideo(); // Stop the video when modal is closed
+}
+
+document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+window.addEventListener('click', function(event) {
+  if (event.target === document.getElementById('videoModal')) {
+    closeModal();
+  }
+});
+
+</script>
+  <script 
+  type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+  </script>
+  <script 
+  nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+  </script>
+  <script src="main.js"></script>
+  <script src="wish-page.js"></script>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
