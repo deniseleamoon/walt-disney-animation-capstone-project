@@ -46,12 +46,22 @@ body {
 }
 
 .films {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  
+}
+/*
+.films {
   display: grid;
   grid-template-columns: 400px 500px 1fr;
   gap: 0px 0px;
   overflow: hidden;
 }
-
+*/
 .walt-disney-intro {
   color: white;
 }
@@ -259,5 +269,13 @@ footer {
   top: 15px;
   right: 35px;
   }
+}
+*/
+/*
+@media screen and (max-height: 450px) {
+  .films {
+
+  }
+  
 }
 */
