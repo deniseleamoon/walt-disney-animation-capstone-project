@@ -1,3 +1,14 @@
+//Nav Drop-Down Menu
+
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
 //Countdown clock
 
 (function () {
@@ -31,7 +42,7 @@
           document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
           document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
+       
         if (distance < 0) {
           document.getElementById("headline").innerText = "Now Playing In Theaters";
           document.getElementById("countdown").style.display = "none";
@@ -43,14 +54,14 @@
   }());
 
   //Input 
-  const name = document.getElementById('name')
+  const fname = document.getElementById('name')
   const email = document.getElementById('email')
   const form = document.getElementById ('form')
   const errorElement = document.getElementById('error')
   
   form.addEventListener('submit', (e) => {
     let messages = []
-    if (name.value === '' || name.value == null) {
+    if (fname.value === '' || fname.value == null) {
       messages.push('Name is required')
     }
   
@@ -99,4 +110,5 @@
       video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
     }
   }
+  
   

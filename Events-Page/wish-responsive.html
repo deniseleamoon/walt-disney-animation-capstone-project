@@ -10,6 +10,23 @@
 
 </head>
 <body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="../Home-Page/home-page.html">Home</a>
+      <a href="../Events-Page/wish-responsive.html">Events</a>
+      <a href="../Films-Page/films.html">Feature Films</a>
+    </div>
+  </div>
+  <span class="btn-open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div class="header">
+      <div class="left-section">
+        
+      </div> 
+      <div class="right-section">
+        <!--<img class="nav-logo" src="logo/Walt-Disney-Animation-Studios-Nav-Logo.png" alt=""> -->
+      </div>
+    </div>
  <div class="postion-section">
     <div>
       <img class="main-poster" src="imgs/2209-wish.jpg" alt="">
@@ -56,55 +73,22 @@
       </div>
       <div>
         <label for="email">Email</label>
-        <input id="email" name="email" type="email">
+        <input id="email" name="email" type="email" required>
       </div>
       <button class="submit-button" type="submit">Submit</button>
     </form>
   </section>
 <footer>
   <div class="social-links">
-  <img class="logo-footer" src="logo/walt-disney-logo-pictures-4466.png" alt="logo">
-  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-</div>
+    <img class="logo-footer" src="logo/walt-disney-logo-pictures-4466.png" alt="logo">
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
   </div>
 </footer> 
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
-  // Get the modal element
-var modal = document.getElementById('videoModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("openModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-  var video = document.getElementById("youtubeVideo");
-  video.src = video.src + "&autoplay=1";
-}
-
-// When the user clicks on <span> (x), close the modal and stop the video
-span.onclick = function() {
-  modal.style.display = "none";
-  var video = document.getElementById("youtubeVideo");
-  video.src = video.src.replace("&autoplay=1", "");
-  video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-}
-
-// When the user clicks anywhere outside of the modal, close it and stop the video
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    var video = document.getElementById("youtubeVideo");
-    video.src = video.src.replace("&autoplay=1", "");
-    video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-  }
-}
+  
 
 </script>
   <script 
