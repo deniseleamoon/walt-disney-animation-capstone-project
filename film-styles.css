@@ -22,7 +22,7 @@ img {
 
 }
 
-h2 {
+strong {
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
 }
@@ -30,15 +30,15 @@ h2 {
 p{
   display: inline-block;
   font-family: 'Roboto', sans-serif;
-  height: 90px;
-  width: 300px;
+  font-size: larger;
+  width: 25%;
   margin-top: 5px;
 }
 
 .storytelling {
   position: absolute;
-  left: 150px;
-  top: 800px;
+  left: 10vh;
+  top: 50vw;
   margin-bottom: 2px;
   z-index: 1;
 }
@@ -55,12 +55,12 @@ p{
  .enlarge-element {
   transition: transform 0.3s ease-in-out;
 }
-/*
+
 .pincchio-section-container {
   display: flex;
   flex-direction: row;
 }
-*/
+
 .main-feature-video {
   display: block;
   position: relative;

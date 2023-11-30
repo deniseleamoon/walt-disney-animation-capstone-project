@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
+/*
 .wish-logo {
   height: 280px;
   position: absolute;
@@ -30,7 +30,7 @@ body {
   left: 460px;
   top: 700px;
 }
-
+*/
 .main-poster {
   width: 100%;
   overflow: hidden;
@@ -42,8 +42,8 @@ body {
 .container {
   position: absolute;
   z-index: 3;
-  top: 80%;
-  left: 50%;
+  top: 80vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
 }
 /*
@@ -53,8 +53,8 @@ body {
   }   
 }
 */
+/*
 @media (max-width: 1390px) {
-  /* Your CSS styles for this screen width range */
   .container {
     top: 70%;
     left: 40%;
@@ -65,7 +65,6 @@ body {
 }
 
 @media (max-width: 1040px) {
-  /* Your CSS styles for this screen width range */
   .container {
     top: 60%;
     left: 30%;
@@ -76,12 +75,12 @@ body {
 }
 
 @media (max-width: 791px) {
-  /* Your CSS styles for this screen width range */
+  
   .container {
-    top: 55%;
-    left: 30%;
+    top: 40%;
+    left: 20%;
     padding: 20px;
-    font-size: 12px;
+    font-size: 4rem;
     transform: translate(-40%, -40%);
   }
 }
@@ -100,11 +99,6 @@ body {
   filter: drop-shadow(2px 2px 5px rgba(12, 28, 54));
 }
 
-.buttons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .enter-button-trailer:hover {
   background: #f3783b;
@@ -112,14 +106,10 @@ body {
 }
 
 
-h1 {
+h1, p {
   font-family: 'Roboto', sans-serif;
 }  
 
-p {
-  font-family: 'Roboto', sans-serif;
-  
-}
 
 .container {
   color: #333;
@@ -337,4 +327,12 @@ footer {
   height: 40px;
   width: 40px;
   background-color: #f3783b;
+}
+
+.flex-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+
 }

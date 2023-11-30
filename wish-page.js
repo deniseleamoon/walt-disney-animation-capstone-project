@@ -1,6 +1,4 @@
 
-
-
 //Countdown clock
 
 (function () {
