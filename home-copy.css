@@ -228,7 +228,7 @@ footer {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: #faf6f6;
   display: block;
   transition: 0.3s;
 }
@@ -242,12 +242,13 @@ footer {
   top: 5px;
   right: 45px;
   font-size: 60px;
+  color: #f3783b;
 }
 
 .btn-open {
   height: 40px;
   width: 40px;
-  background-color: orange;
+  background-color: #f3783b;
 }
 
 /*

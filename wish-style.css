@@ -32,7 +32,6 @@ body {
 }
 
 .main-poster {
-  margin-top: 50px;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
@@ -173,21 +172,38 @@ footer {
   line-height: 1.5;
 }
 
+
+.logo-footer {
+  height: 50px;
+  margin-left: 1rem;
+}
+.logo-footer:first-child {
+  margin-right: auto;
+}
+
+/* Social Media Links */
 .social-links {
   bottom: 0;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 1.5rem;
+  margin-right: 40rem;
+  margin-top: 10px;
 }
 
 .social-links a {
   color: inherit;
   font-size: 2rem;
+  margin-top: 10px;
 }
 
-/* Your modal styles */
+.social-links a:hover {
+  color: #f3783b;
+}
+
+/* Modal styles */
 .modal {
   display: none;
   position: fixed;
@@ -247,4 +263,52 @@ footer {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+/* Curtain Menu*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #faf6f6;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 45px;
+  font-size: 60px;
+  color: #f3783b;
+}
+
+.btn-open {
+  height: 40px;
+  width: 40px;
+  background-color: #f3783b;
 }
