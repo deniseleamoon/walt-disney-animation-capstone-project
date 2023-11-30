@@ -92,3 +92,35 @@ footer {
   border-bottom: 10px solid #f3783b;
   z-index: 2;
 }
+
+.logo-footer {
+  height: 50px;
+  margin-left: 1rem;
+}
+.logo-footer:first-child {
+  margin-right: auto;
+}
+
+
+
+/* Social Media Links */
+.social-links {
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 40rem;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: inherit;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.social-links a:hover {
+  color: #f3783b;
+}
