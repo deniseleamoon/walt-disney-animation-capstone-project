@@ -35,6 +35,7 @@ img {
   height: 100%;
   vertical-align: baseline;
   object-fit: cover;
+  
 
 }
 
@@ -69,7 +70,6 @@ p{
 }
 
 .storytelling {
-
   width: 100%;
   margin-bottom: 2px;
   z-index: 1;
@@ -81,7 +81,6 @@ p{
   height: 200px;
   z-index: -10;
   opacity: 80%;
- 
   overflow-x: hidden;
   object-fit: contain;
 }
@@ -93,20 +92,12 @@ p{
     position: relative;
     height: 500px;
     z-index: -10;
-    opacity: 50%;
-    margin-left: 120px;
+    opacity: 60%;
     overflow-x: hidden; /* Larger font size for desktop */
+    object-fit: contain;
   }
 }
 
- .enlarge-element {
-  transition: transform 0.3s ease-in-out;
-}
-
-.pincchio-section-container {
-  display: flex;
-  flex-direction: row;
-}
 
 .main-feature-video {
   display: block;
@@ -115,6 +106,7 @@ p{
   height: 100%;
   overflow-x: hidden;
   z-index: 1;
+  object-fit: contain;
 }
 
 .title-films {
