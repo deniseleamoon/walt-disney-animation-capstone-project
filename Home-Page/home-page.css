@@ -54,15 +54,19 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-
-
-  
+  justify-content: center; 
 }
 
 .walt-disney-intro {
   color: white;
+  font-size: 100px;
+  font-weight: 200;
 }
+
+.make-orange {
+  color: #f3783b;
+}
+
 .since {
   color: white;
   font-size: 115px;
