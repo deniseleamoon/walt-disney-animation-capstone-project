@@ -64,7 +64,7 @@ p{
     font-size: larger;
     margin-top: 90px;
     margin-right: 14px;
-    margin-left: 30px; /* Larger font size for desktop */
+    margin-left: 50px; /* Larger font size for desktop */
   }
 }
 
@@ -81,6 +81,7 @@ p{
   height: 200px;
   z-index: -10;
   opacity: 80%;
+ 
   overflow-x: hidden;
   object-fit: contain;
 }
@@ -93,6 +94,7 @@ p{
     height: 500px;
     z-index: -10;
     opacity: 50%;
+    margin-left: 120px;
     overflow-x: hidden; /* Larger font size for desktop */
   }
 }
