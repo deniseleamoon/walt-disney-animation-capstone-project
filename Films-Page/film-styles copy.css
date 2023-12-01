@@ -14,7 +14,7 @@ body {
 
 .film-posters-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   overflow: hidden;
   filter: drop-shadow(2px 2px 2px black);
@@ -37,8 +37,7 @@ p{
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: larger;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 10px;
   margin-right: 14px;
   margin-left: 14px;
 }
@@ -52,11 +51,11 @@ p{
 
 .pinocchio-sketch {
   display: inline-block;
+  position: relative;
   height: 200px;
   z-index: -10;
-  opacity: 80%;
+  opacity: 50%;
   overflow-x: hidden;
-  object-fit: contain;
 }
 
  .enlarge-element {

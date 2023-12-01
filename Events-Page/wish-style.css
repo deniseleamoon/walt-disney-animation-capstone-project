@@ -243,6 +243,7 @@ input {
   background-color: #f3783b;
   color: black;
 }
+/*Footer*/
 
 footer {
   height: 150px;
@@ -250,11 +251,11 @@ footer {
   border-bottom: 10px solid #f3783b;
   z-index: 2;
 }
-.logo-footer {
-  height: 50px;
+#logo-footer {
+  height: 10px;
   margin-left: 1rem;
 }
-.logo-footer:first-child {
+#logo-footer:first-child {
   margin-right: auto;
 }
 
