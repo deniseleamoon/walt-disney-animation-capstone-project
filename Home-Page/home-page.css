@@ -59,8 +59,19 @@ body {
 
 .walt-disney-intro {
   color: white;
+  font-size: 65px;
+  font-weight: 200;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  /* Increase font size for desktop */
+  .walt-disney-intro {
+    color: white;
   font-size: 100px;
   font-weight: 200;
+  }
 }
 
 .make-orange {
