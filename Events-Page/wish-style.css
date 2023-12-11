@@ -10,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
 /*
 .wish-logo {
   height: 280px;
@@ -328,6 +329,7 @@ footer {
 }
 
 .btn-open {
+  position: absolute;
   height: 40px;
   width: 40px;
   background-color: #f3783b;
@@ -350,7 +352,7 @@ footer {
     position: fixed;
     z-index: 9999;
     left: 0;
-    top: 10%;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -385,6 +387,7 @@ footer {
   /* Responsive video container */
   .video-container {
     position: relative;
+    padding-top: 20%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio (h / w * 100) */
     overflow: hidden;
   }
@@ -409,7 +412,7 @@ footer {
   border: none;
   cursor: pointer;
   z-index: 999;
-  top: 35%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;

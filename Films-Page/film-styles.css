@@ -35,8 +35,6 @@ img {
   height: 100%;
   vertical-align: baseline;
   object-fit: cover;
-  
-
 }
 
 strong {
@@ -216,9 +214,12 @@ footer {
 }
 
 .btn-open {
+  position:absolute;
   height: 40px;
   width: 40px;
   background-color: #f3783b;
+  z-index: 2;
+  
 }
 
 /*
