@@ -77,21 +77,24 @@ body {
 
 .make-orange {
   color: #f3783b;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 400;
 }
-
 
 .since {
   color: white;
   font-size: 115px;
   font-weight: 300;
   margin-bottom: 2px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 769px) {
   /* Increase font size for desktop */
   .since {
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 300;
   margin-top: 50px;
   margin-bottom: 2px;
@@ -110,7 +113,7 @@ body {
 @media screen and (min-width: 769px) {
   /* Increase font size for desktop */
   .date-1923 {
-    font-size: 300px;
+    font-size: 400px;
     color: transparent;
     margin-top: 2px;
     margin-bottom: 10px;
