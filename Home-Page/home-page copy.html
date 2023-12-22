@@ -13,7 +13,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500&display=swap" rel="stylesheet">
-
+<style>
+  .enlarge-text {
+  font-size: 400px; /* Initial font size */
+  transition: font-size 0.3s ease-in-out;
+}
+</style>
 </head>
 <body>
 <div id="myNav" class="overlay">
@@ -31,31 +36,32 @@
       <!--<img class="nav-logo" src="logo/Walt-Disney-Animation-Studios-Nav-Logo.png" alt=""> -->
     </div>
   </div>
+  <section>
+     <div class="steamboat-main">
+      <video class="steamboat-main" width="720" height="640" playsinline autoplay muted loop poster="imgs/steamboat.jpg">
+        <source src="videos/steamboat.mp4" type="video/mp4">
+     </div>
+     <!--
+      <div>
+      <video class="steamboat-sketch" width="720" height="640" playsinline autoplay muted loop>
+        <source src="videos/WDAS_Montage_2_2.mp4" type="video/mp4">
+     </div>
+     -->
+  </section>
+
   <section class="intro-title">
     <div class="intro-flex-conatainer">
       <div>
         <h1 class="walt-disney-intro" >Walt Disney <span class="make-orange">Animation</span> Studios</h1>
       </div>
       <div>
-        <p class="since">SINCE</p>
+        <p class="since" >SINCE</p>
       </div>
       <div>
-        <p class="date-1923">1923</p>
+        <p class="date-1923" class="enlarge-text" id="text">1923</p>
       </div>
     </div>
   </section>
-  <section>
-    <div class="steamboat-main" class="container">
-     <video class="steamboat-main" id="scrollVideo" width="720" height="640" playsinline autoplay muted loop poster="imgs/steamboat.jpg">
-       <source src="videos/steamboat.mp4" type="video/mp4">
-    </div>
-    <!--
-     <div>
-     <video class="steamboat-sketch" width="720" height="640" playsinline autoplay muted loop>
-       <source src="videos/WDAS_Montage_2_2.mp4" type="video/mp4">
-    </div>
-    -->
- </section>
 <section class="films-collection">
   <div class="films">
     <div id="snow-white-animation">
@@ -245,20 +251,28 @@
 
 <script type="text/javascript" src="home.js"></script>
 <script type="text/javascript" src="main.js"></script>
-<!--
  <script>
   window.addEventListener('scroll', function() {
-  const scrollVideo = document.getElementById('scrollVideo');
-  const scrollValue = window.scrollY;
-  const videoScale = 1 + scrollValue * 0.001; // Adjust the scaling factor as needed
-  const videoOpacity = 1 - scrollValue * 0.001; // Adjust the opacity factor as needed
+  const text = document.getElementById('text');
+  const distanceFromTop = text.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
 
-  scrollVideo.style.transform = `scale(${videoScale})`;
-  scrollVideo.style.opacity = videoOpacity > 0 ? videoOpacity : 0; // Ensure opacity doesn't go below 0
+  // Calculate the range between the initial and target font size
+  const initialFontSize = 600; // Initial font size in pixels
+  const targetFontSize = 400; // Target font size in pixels
+
+  // Calculate the scroll progress as a value between 0 and 1
+  const scrollProgress = distanceFromTop / windowHeight;
+  
+  // Calculate the font size within the specified range
+  const fontSize = initialFontSize + scrollProgress * (targetFontSize - initialFontSize);
+
+  // Apply the font size transformation
+  text.style.fontSize = `${fontSize}px`;
 });
 
+
  </script>
- -->
 <script 
   type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
 </script>

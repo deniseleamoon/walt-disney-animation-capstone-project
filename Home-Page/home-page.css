@@ -309,7 +309,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-video {
+.videosteamboat-main {
   max-width: 100%;
   opacity: 50;
   transition: opacity 0.5s ease-in-out;
