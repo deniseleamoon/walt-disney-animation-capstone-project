@@ -69,8 +69,9 @@ body {
   /* Increase font size for desktop */
   .walt-disney-intro {
     color: white;
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 200;
+  margin-top: 50px;
   }
 }
 
@@ -78,14 +79,26 @@ body {
   color: #f3783b;
 }
 
+
 .since {
   color: white;
   font-size: 115px;
   font-weight: 300;
   margin-bottom: 2px;
 }
+
+@media screen and (min-width: 769px) {
+  /* Increase font size for desktop */
+  .since {
+  color: white;
+  font-size: 60px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 2px;
+  }
+}
 .date-1923 {
-  font-size: 450px;
+  font-size: 200px;
   color: transparent;
   margin-top: 2px;
   margin-bottom: 10px;
@@ -93,6 +106,20 @@ body {
   -webkit-text-stroke-color: #f3783b;
   overflow-x: hidden;  
 }
+
+@media screen and (min-width: 769px) {
+  /* Increase font size for desktop */
+  .date-1923 {
+    font-size: 300px;
+    color: transparent;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #f3783b;
+    overflow-x: hidden;  
+  }
+}
+
 .wish-image {
   height: 450px;
   margin: 0 auto;
@@ -275,7 +302,18 @@ footer {
   background-color: #f3783b;
 }
 
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+video {
+  max-width: 100%;
+  opacity: 50;
+  transition: opacity 0.5s ease-in-out;
+}
 
 /*
 @media screen and (max-height: 450px) {

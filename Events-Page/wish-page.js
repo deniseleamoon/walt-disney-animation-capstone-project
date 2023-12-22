@@ -12,7 +12,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "12/22/",
+      dayMonth = "05/22/",
       movieday = dayMonth + yyyy;
 
   today = mm + "/" + dd + "/" + yyyy;
