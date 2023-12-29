@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feature Films</title>
+  <link rel="stylesheet" href="film-modal.css">
   <link rel="stylesheet" href="film-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
   <section class="pinocchio-section">
     <div class="pinocchio-section-container">
       <div class="storytelling" >
-        <p> <strong>100 Years of Storytelling</strong><br>
+        <p id="story"> <strong>100 Years of Storytelling</strong><br>
           In 1937, Walt Disney Animation Studios released its first fully animated feature film, Snow White and the Seven Dwarfs, pioneering a new form of family entertainment. Nearly a century later, we continue to honor our heritage through animated films that combine beautiful artistry, masterful storytelling and groundbreaking technology.
         </p>
       </div>
@@ -48,76 +49,76 @@
 
 <div class="film-posters-container", id="fearure-films-container">
   <div>
-    <img src="movie-posters/strangeworld_poster.jpg" alt="Strange World movie poster">
+    <img id="myImg" src="movie-posters/strangeworld_poster.jpg" alt="Strange World movie poster" onclick="openModal()">
   </div>
   <div>
-    <img src="movie-posters/60-encanto.jpg" alt="Encanto">
+    <img class="mvoie" src="movie-posters/60-encanto.jpg" alt="Encanto">
   </div>
   <div>
-    <img src="movie-posters/rayaposter.jpg" alt="Raya">
+    <img class="mvoie" src="movie-posters/rayaposter.jpg" alt="Raya">
   </div>
   <div>
-    <img src="movie-posters/frozen-2.jpg" alt="Frozen II">
+    <img class="mvoie" src="movie-posters/frozen-2.jpg" alt="Frozen II">
   </div>
   <div>
-    <img src="movie-posters/ralph-breaks-the-internet.jpg" alt="">
+    <img class="mvoie" src="movie-posters/ralph-breaks-the-internet.jpg" alt="">
   </div>
   <div>
-    <img src="movie-posters/moana.jpg" alt="Moana"> 
+    <img class="mvoie" src="movie-posters/moana.jpg" alt="Moana"> 
   </div>
   <div>
-    <img src="movie-posters/zootopia.jpg" alt="Zootpoia">
+    <img class="mvoie" src="movie-posters/zootopia.jpg" alt="Zootpoia">
   </div>
   <div>
-    <img src="movie-posters/big-hero.jpg" alt="Big Hero">
+    <img class="mvoie" src="movie-posters/big-hero.jpg" alt="Big Hero">
   </div>
   <div>
-    <img src="movie-posters/frozen.jpg" alt="Frozen movie poster">
+    <img class="mvoie" src="movie-posters/frozen.jpg" alt="Frozen movie poster">
   </div>
   <div>
-    <img src="movie-posters/wreckit-ralph.jpg" alt="">
+    <img class="mvoie" src="movie-posters/wreckit-ralph.jpg" alt="">
   </div>
   <div>
-    <img src="movie-posters/tangled.jpg" alt="">
+    <img class="mvoie" src="movie-posters/tangled.jpg" alt="">
   </div>
   <div>
-    <img src="movie-posters/princess-frog.jpg" alt="The Princess and the Frog">
+    <img class="mvoie" src="movie-posters/princess-frog.jpg" alt="The Princess and the Frog">
   </div>
   <div>
-    <img src="movie-posters/bolt.jpg" alt="">
+    <img class="mvoie" src="movie-posters/bolt.jpg" alt="">
   </div>
   <div>
-    <img src="movie-posters/2007-meet-the-robinsons-3.jpg" alt="Meet the Robinsons">
+    <img class="mvoie" src="movie-posters/2007-meet-the-robinsons-3.jpg" alt="Meet the Robinsons">
   </div>
   <div>
-    <img src="movie-posters/chicken-little.jpg" alt="Chicken-Little">
+    <img class="mvoie" src="movie-posters/chicken-little.jpg" alt="Chicken-Little">
   </div>
   <div>
-    <img src="movie-posters/lilo-stitch.jpg" alt="Lilo and Stitch">
+    <img class="mvoie" src="movie-posters/lilo-stitch.jpg" alt="Lilo and Stitch">
   </div>
   <div>
-    <img src="movie-posters/new-groove.jpg" alt="New Groove">
+    <img class="mvoie" src="movie-posters/new-groove.jpg" alt="New Groove">
   </div>
   <div>
-    <img src="movie-posters/dinosaur.jpg" alt="Dinosaur">
+    <img class="mvoie" src="movie-posters/dinosaur.jpg" alt="Dinosaur">
   </div>
   <div>
-    <img src="movie-posters/fantasia-2000.jpg" alt="Fantasia">
+    <img class="mvoie" src="movie-posters/fantasia-2000.jpg" alt="Fantasia">
   </div>
   <div>
-    <img src="movie-posters/tarzan.jpg" alt="Tarzan">
+    <img class="mvoie" src="movie-posters/tarzan.jpg" alt="Tarzan">
   </div>
   <div>
-    <img src="movie-posters/mulan.jpg" alt="Mulan">
+    <img class="mvoie" src="movie-posters/mulan.jpg" alt="Mulan">
   </div>
   <div>
-    <img src="movie-posters/hercules.jpg" alt="Hercules">
+    <img class="mvoie" src="movie-posters/hercules.jpg" alt="Hercules">
   </div>
   <div>
-    <img src="movie-posters/hunchback-notre-dame.jpg" alt="Hunchback Notre Dame">
+    <img class="mvoie" src="movie-posters/hunchback-notre-dame.jpg" alt="Hunchback Notre Dame">
   </div>
   <div>
-    <img src="movie-posters/pocahontas.jpg" alt="Pocahontas">
+    <img class="mvoie" src="movie-posters/pocahontas.jpg" alt="Pocahontas">
   </div>
   <div>
     <img src="movie-posters/lion-king.jpg" alt="Lion King">
@@ -133,6 +134,44 @@
   </div> 
 </div>
 </div> 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <button class="btn-main"><span class="close" onclick="closeModal()">&times;</span></button>
+  <div class="main-titles">
+    <p class="feature-films">Feature Films</p>
+    <h1 id="modal-title" class="strange-world">Strange <br> World</h1>
+  </div>
+  <div>
+    <img class="splash-image" src="splash-images/strangeWorld_teaser.jpg" alt="">
+  </div>
+  <section>
+    <div class="film-container">
+      <div>
+        <img class="strange-world-logo" src="logo/strangeworld-logo.png" alt="">
+      </div>
+      <div class="strange-world-container">
+      <div>
+        <p id="strange-world" id="story-strange-world">
+          Strange World journeys deep into an uncharted and treacherous land where fantastical creatures await the legendary Clades, a family of explorers whose differences threaten to topple their latest—and by far— most crucial mission.
+        </p>
+      </div>
+      <div id="movie-creators" id="strange-world">
+        <span> DIRECTED BY</span>
+        <p class="film-artist">Don Hall, Qui Nguyen</p>
+      </div>
+      <div id="movie-creators" id="strange-world">
+        <span>PRODUCED BY</span>
+        <p class="film-artist">Roy Conli</p>
+      </div>
+      <div id="movie-creators" id="strange-world">
+        <span>RELEASE DATE</span>
+        <p class="film-artist">November 23, 2022</p>
+      </div>
+    </div> 
+  </div>
+</section>
+</div>
 <footer>
   <div class="social-links">
     <!--
@@ -145,6 +184,25 @@
   </div>
 </footer>
 <script src="films.js"></script>
+<script>
+  // Get the modal
+const modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal
+const img = document.getElementById("myImg");
+const modalImg = document.getElementById("img01");
+
+function openModal() {
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+
+// Close the modal when the user clicks on <span> (x)
+function closeModal() {
+  modal.style.display = "none";
+}
+
+</script>
 <script 
   type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
   </script>

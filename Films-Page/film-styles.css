@@ -42,7 +42,7 @@ strong {
   font-weight: bolder;
 }
 
-p{
+#story{
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: larger;
@@ -55,7 +55,7 @@ p{
 
 @media screen and (min-width: 769px) {
   /* Increase font size for desktop */
-  p {
+  #story {
     display: inline-block;
     position: absolute;
     width: 40%;
@@ -71,6 +71,7 @@ p{
   width: 100%;
   margin-bottom: 2px;
   z-index: 1;
+  color: black;
 }
 
 .pinocchio-sketch {
@@ -232,3 +233,4 @@ footer {
   }
 }
 */
+ 
