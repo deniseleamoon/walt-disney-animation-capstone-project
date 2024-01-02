@@ -24,7 +24,7 @@ body {
 }
 
 .feature-films {
-  font-weight: 300px;
+  font-weight: 350px;
   letter-spacing: 5px;
 }
 
@@ -99,8 +99,10 @@ body {
   top: 0;
   width: 80%;
   height: 100%;
+  /*
   overflow-y: auto;
   overflow-x: hidden;
+  */
   background-color: rgb(71, 71, 71);
 }
 
@@ -142,5 +144,18 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
+  background-color: #f3783b;
+  border: none;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 999;
+
 }
 
+.modal-open {
+  overflow: hidden;
+}

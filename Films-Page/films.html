@@ -49,10 +49,10 @@
 
 <div class="film-posters-container", id="fearure-films-container">
   <div>
-    <img id="myImg" src="movie-posters/strangeworld_poster.jpg" alt="Strange World movie poster" onclick="openModal()">
+    <img id="myImage" src="movie-posters/strangeworld_poster.jpg" alt="Strange World movie poster" onclick="openModal()">
   </div>
   <div>
-    <img class="mvoie" src="movie-posters/60-encanto.jpg" alt="Encanto">
+    <img class="mvoie" src="movie-posters/60-encanto.jpg" alt="Encanto" onclick="openModal()">
   </div>
   <div>
     <img class="mvoie" src="movie-posters/rayaposter.jpg" alt="Raya">
@@ -137,7 +137,8 @@
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <!-- Modal content -->
-  <button class="btn-main"><span class="close" onclick="closeModal()">&times;</span></button>
+  <div class="modal-content">
+  <button class="btn-main"><span id="closeModal" style="cursor: pointer;">&times;</span></button>
   <div class="main-titles">
     <p class="feature-films">Feature Films</p>
     <h1 id="modal-title" class="strange-world">Strange <br> World</h1>
@@ -168,10 +169,11 @@
         <span>RELEASE DATE</span>
         <p class="film-artist">November 23, 2022</p>
       </div>
-    </div> 
+      </div> 
+    </div>
+  </section>
   </div>
-</section>
-</div>
+  </div>
 <footer>
   <div class="social-links">
     <!--
@@ -185,22 +187,45 @@
 </footer>
 <script src="films.js"></script>
 <script>
+ // JavaScript to handle modal functionality
+
   // Get the modal
-const modal = document.getElementById("myModal");
+  var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal
-const img = document.getElementById("myImg");
-const modalImg = document.getElementById("img01");
+  // Get the image that opens the modal
+  var img = document.getElementById('myImage');
 
-function openModal() {
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
+  // Get the <span> element that closes the modal
+  var span = document.getElementById('closeModal');
 
-// Close the modal when the user clicks on <span> (x)
-function closeModal() {
-  modal.style.display = "none";
-}
+  // Function to handle opening the modal
+  function openModal() {
+    modal.style.display = 'block';
+    document.body.classList.add('modal-open'); // Add class to body to disable scrolling
+  }
+
+  // Function to handle closing the modal
+  function closeModal() {
+    modal.style.display = 'none';
+    document.body.classList.remove('modal-open'); // Remove class to enable scrolling
+  }
+
+  // When the user clicks the image, open the modal
+  img.onclick = function() {
+    openModal();
+  };
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    closeModal();
+  };
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      closeModal();
+    }
+  };
 
 </script>
 <script 
