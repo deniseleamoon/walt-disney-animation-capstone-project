@@ -1,4 +1,4 @@
-Walt Disney Animation Clone
+Walt Disney Animation Capstone Project
 
 Description:
 A visually appealing site with nostalgic and charming images of your favorite Disney animations. 
